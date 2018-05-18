@@ -8,6 +8,7 @@ Components
 @import url('css/typography.css');
 @import url('css/reset.css');
 @import url('css/portfolio.css');
+@import url('css/normalize.css')
 
 
 /* 
@@ -23,7 +24,7 @@ Global
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url('img/main.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url('img/main.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% top;
@@ -33,7 +34,7 @@ body {
 }
 
 .main {
-       max-width: 600px;
+       max-width: 700px;
      margin: 0 auto;
 }
 
