@@ -1,0 +1,17 @@
+
+
+.sidebar {
+    font-family: 'Bree Serif', serif; 
+    font-size: 2em;
+    text-align: left;
+}
+
+.content {
+    font-size: 1.4em;
+    text-align: right;
+}
+
+.footer p{
+    
+    text-align: center;
+}

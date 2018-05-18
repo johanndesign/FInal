@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ubuntu" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="JQuery/jquery.big-slide.js"></script>
+    <title>Johann Paulino</title>
+</head>
+
+<body class="main">
+    <div class="container">
+        <div class="grid header">
+           <img id="logo-main" src='img/logo_main.svg'/>
+            <div id="menu" class="panel" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="masthead">
+                <div class="wrap push">
+                    <a href="#menu" class="menu-link">&#9776;</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid sidebar">
+            <p>“It’s through mistakes that you actually can grow. 
+You have to get bad in order to get good."</p>
+        </div>
+        <div class="grid content">
+        <p>I discovered my passion for design when I was a freshman in High School; It was then when it became clear what I wanted to do for a living. I'm pursuing my career at Borough of Manhattan Community College where I'm studing my major in Multimedia Programming.
+        <br>
+        <br> A year later I took a begginer’s Web class, where I discovered the love for code. After that, I switched my major to Interactive Design and started the never-ending journey of becoming a web developer along with sharpening my eye for design.</p>
+        </div>
+        <div class="grid footer">
+            <p>© 2018 Johann Paulino graphic designer</p>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+
+</script>
+</html>

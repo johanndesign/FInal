@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery/bigSlide.min.js"></script>
+    <script src="jquery/jquery.mixitup.min.js"></script>
+    
+    <title>Johann Paulino</title>
+</head>
+
+<body class="main">
+    <div class="container">
+        <div class="grid header">
+            <img id="logo-main" src='img/logo_main.svg' />
+            <div id="menu" class="panel" role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="masthead">
+                <div class="wrap push">
+                    <a href="#menu" class="menu-link">&#9776;</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container main">
+        <div class="row">
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery1.jpg"><img src="img/portfolios/gallery1.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery10.jpg"><img src="img/portfolios/gallery10.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery11.jpg"><img src="img/portfolios/gallery11.jpg" /></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery2.jpg"><img src="img/portfolios/gallery2.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery3.jpg"><img src="img/portfolios/gallery3.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery4.jpg"><img src="img/portfolios/gallery4.jpg" /></a>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 10%;">
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery5.jpg"><img src="img/portfolios//gallery5.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery6.jpg"><img src="img/portfolios/gallery6.jpg" /></a>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="img/portfolios/gallery7.jpg"><img src="img/portfolios/gallery7.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <p>© 2018 Johann Paulino graphic designer</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
+
+<script src="jquery/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+	 $('.image-link').magnificPopup({ 
+  type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function 
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});	</script>
+
+</html>
